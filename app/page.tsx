@@ -66,7 +66,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className={styles.title}
         >
-          Will you marry me?
+          Do you Like me (Abdullah Umer)?
         </motion.h1>
 
         <div className={styles.buttonContainer}>
