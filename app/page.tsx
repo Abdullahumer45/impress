@@ -66,7 +66,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className={styles.title}
         >
-          Do you Like me (Abdullah Umer)?
+          Will you marry me?
         </motion.h1>
 
         <div className={styles.buttonContainer}>
@@ -136,7 +136,7 @@ export default function Home() {
               className={styles.responseMessage}
             >
               <h2>Thank you for saying yes! 💖</h2>
-              <p>I've sent him a notification!</p>
+              <p>I&apos;ve sent him a notification!</p>
             </motion.div>
           )}
         </AnimatePresence>
