@@ -1,0 +1,152 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  perspective: 1000px;
+}
+
+.night {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(0.1vmin);
+  background-image: 
+    radial-gradient(ellipse at top, transparent 0%, #000),
+    radial-gradient(ellipse at bottom, #000, rgba(145, 233, 255, 0.2)),
+    repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
+    repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
+    repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
+    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.yesButton,
+.noButton {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonText {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.flowerBurst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.responseForm {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.responseForm h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.responseForm p {
+  margin-bottom: 1.5rem;
+}
+
+.responseForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.responseForm input,
+.responseForm textarea {
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.responseForm textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.responseForm button {
+  padding: 0.8rem;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.responseForm button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+}
+
+.responseMessage {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.responseMessage h2 {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.responseMessage p {
+  color: #fff;
+  font-size: 1.2rem;
+} 
